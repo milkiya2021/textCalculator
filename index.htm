@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TextCalculator</title>
+    <link rel="stylesheet" href="deco.css" />
+    <link
+      href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-neo.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1 class="title">➕➖글자수 세주는 계산기✖➗</h1>
+    <hr />
+
+    <div class="content">
+      <div class="inputSpace">
+        <div class="guide">📝글자를 세고 싶은 문장을 아래에 입력하세요!</div>
+        <textarea
+          id="input"
+          name="input"
+          row="10"
+          cols="80"
+          onkeydown="counter();"
+          placeholder="지우고 입력하셔요!"
+        ></textarea>
+        <div class="buttonAlign">
+          <div class="inputDesc">📢 최대 200자까지 입력이 가능합니다.</div>
+        </div>
+      </div>
+      <div class="outputSpace">
+        <div class="resultTitle">💥두둥! 결과는?💥</div>
+        <div class="result">
+          <div class="total">총&nbsp;</div>
+          <div class="resultOutput" id="resultOutput"></div>
+          <div class="count">&nbsp;자</div>
+        </div>
+        <div class="buttonAlign">
+          <button class="button" id="reset">리셋</button>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <footer class="author">made by hebom 2022</footer>
+    <script src="cal.js"></script>
+  </body>
+</html>
